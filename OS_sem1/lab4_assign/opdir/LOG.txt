@@ -1,0 +1,1 @@
+gradeit.sh newdir/ opdir/ opdir//LOG.txt
