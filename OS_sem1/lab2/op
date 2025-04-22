@@ -1,0 +1,85 @@
+s P
+Pquant:2maxprio:2CHAAR P why nothing
+ENTERINGENTERING 2PRIO
+
+SIZEof EQ 2 AQ 2randvals[0]=1601052221
+inserting event at pos: 0randvals[1]=747907279
+inserting event at pos: 1randvals[2]=118322937
+inserting event at pos: 2
+EVENT 0:1 EVENT 0:2 
+DP 1 
+RQ before insertion: 
+Inserting to active
+ inserted succ
+EVENT 0:2 
+DP 1 
+RQ before insertion: 
+Inserting to active
+ inserted succ
+
+DP 1 
+RQ before insertion: 
+Inserting to active
+ inserted succdequiing from q, current q b4 dq: 
+REMOVINGREMOVING 2
+1	
+GOTCHAAA
+CURRENT RUNNING PROCESS PID:0
+inserting event at pos: 0
+randvals[3]=1080995411
+inserting event at pos: 0
+
+Inserting to active
+ inserted succdequiing from q, current q b4 dq: 
+REMOVINGREMOVING 2
+1	
+GOTCHAAA
+CURRENT RUNNING PROCESS PID:1
+inserting event at pos: 0
+randvals[4]=1502869399
+inserting event at pos: 0
+randvals[5]=148646276
+inserting event at pos: 0
+changing endtime from 0 ==>4dequiing from q, current q b4 dq: 
+REMOVINGREMOVING 2
+1	
+GOTCHAAA
+CURRENT RUNNING PROCESS PID:2
+inserting event at pos: 0
+EVENT 4:1 randvals[6]=1738545266
+inserting event at pos: 1
+EVENT 5:2 
+
+ADDING IO FROM TO 0 ==>1
+DP 1 
+RQ before insertion: 
+Inserting to active
+ inserted succ
+
+5 2 2 : DONEdequiing from q, current q b4 dq: 
+REMOVINGREMOVING 2
+1	
+GOTCHAAA
+CURRENT RUNNING PROCESS PID:0
+inserting event at pos: 0
+
+inserting event at pos: 0
+
+6 0 1 : DONEdequiing from q, current q b4 dq: 
+REMOVINGREMOVING 2
+1	
+GOTCHAAA
+CURRENT RUNNING PROCESS PID:1
+inserting event at pos: 0
+randvals[7]=474239658
+inserting event at pos: 0
+
+7 1 1 : DONEdequiing from q, current q b4 dq: 
+REMOVINGREMOVING 2
+1	0	
+PRIO
+pid	 ft	 tt	 bt	 wt	 sp	
+0000:    0    3    3   20 2 |     6     6     0     3
+0001:    0    2    1    1 2 |     7     7     1     4
+0002:    0    2    3    4 2 |     5     5     0     3
+SUM: 7 100.00 14.29 6.00 3.33 42.857

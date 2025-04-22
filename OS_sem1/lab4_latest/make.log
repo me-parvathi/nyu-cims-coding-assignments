@@ -1,0 +1,2 @@
+rm -f ioscheduler
+g++ -std=c++11 -o ioscheduler assign4.cpp

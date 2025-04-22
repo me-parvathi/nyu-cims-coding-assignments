@@ -1,0 +1,2 @@
+rm -f myschedulerrr
+g++ -std=c++11 -o myschedulerrr assign_2.cpp
