@@ -1,0 +1,57 @@
+structure JsonNesting =
+struct
+  fun is_bracket c =
+    c = #"{"
+    orelse c = #"}"
+    orelse c = #"["
+    orelse c = #"]"
+
+  fun bracket_depths (json_chars : char Seq.t)
+                     (in_string_flags : bool Seq.t)
+                     : (int * int * int) Seq.t =
+  let
+    val n = Seq.length json_chars
+
+    fun is_valid_bracket i =
+      is_bracket (Seq.nth json_chars i)
+      andalso not (Seq.nth in_string_flags i)
+
+
+    val bracket_positions =
+      Parallel.filter (0, n) (fn i => i) is_valid_bracket
+
+    val num_brackets = Seq.length bracket_positions
+
+
+    fun scan i (curlyDepth, squareDepth, acc) =
+      if i = num_brackets then
+        List.rev acc   
+      else
+        let
+          val pos = Seq.nth bracket_positions i
+          val c   = Seq.nth json_chars pos
+
+          val (curlyDepth1, squareDepth1) =
+            case c of
+              #"}" => (curlyDepth - 1, squareDepth)
+            | #"]" => (curlyDepth, squareDepth - 1)
+            |  _   => (curlyDepth, squareDepth)
+
+          val depths = (pos, curlyDepth1, squareDepth1)
+
+
+          val (curlyDepth2, squareDepth2) =
+            case c of
+              #"{" => (curlyDepth1 + 1, squareDepth1)
+            | #"[" => (curlyDepth1, squareDepth1 + 1)
+            |  _   => (curlyDepth1, squareDepth1)
+
+        in
+          scan (i+1) (curlyDepth2, squareDepth2, depths :: acc)
+        end
+
+    val result_list = scan 0 (0, 0, [])
+  in
+    Seq.fromList result_list
+  end
+end

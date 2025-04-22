@@ -1,0 +1,66 @@
+procs 1 average 7.5562s
+procs 2 average 3.9806s
+procs 3 average 2.7224s
+procs 4 average 2.0795s
+procs 5 average 1.7564s
+procs 6 average 1.4109s
+procs 7 average 1.2029s
+procs 8 average 1.0652s
+procs 9 average 0.9574s
+procs 10 average 0.8518s
+procs 11 average 0.7788s
+procs 12 average 0.7059s
+procs 13 average 0.6556s
+procs 14 average 0.6125s
+procs 15 average 0.5678s
+procs 16 average 0.5471s
+procs 17 average 0.5288s
+procs 18 average 0.5040s
+procs 19 average 0.4767s
+procs 20 average 0.4546s
+procs 21 average 0.4379s
+procs 22 average 0.4254s
+procs 23 average 0.4086s
+procs 24 average 0.3920s
+procs 25 average 0.3869s
+procs 26 average 0.3600s
+procs 27 average 0.3532s
+procs 28 average 0.3395s
+procs 29 average 0.3343s
+procs 30 average 0.3289s
+procs 31 average 0.3218s
+procs 32 average 0.3130s
+
+
+1   7.5562   
+2   3.9806
+3   2.7224
+4   2.0795
+5   1.7564
+6   1.4109
+7   1.2029
+8   1.0652
+9   0.9574
+10  0.8518
+11  0.7788
+12  0.7059
+13  0.6556
+14  0.6125
+15  0.5678
+16  0.5471
+17  0.5288
+18  0.5040
+19  0.4767
+20  0.4546
+21  0.4379
+22  0.4254
+23  0.4086
+24  0.3920
+25  0.3869
+26  0.3600
+27  0.3532
+28  0.3395
+29  0.3343
+30  0.3289
+31  0.3218
+32  0.3130
